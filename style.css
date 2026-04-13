@@ -37,12 +37,10 @@ a:hover {
 }
 .container {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding-top: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
     background-color: #f9ecdc;
        
 }
@@ -50,32 +48,36 @@ a:hover {
     position: absolute;
     top: 200px;
     right: 40px;
-    background-color: rgb(181, 112, 27);
+    background-color: rgba(166, 117, 57, 0.578);
     cursor: default;
     display: flex;
     flex-direction: row;
-    
     gap: 6PX;
     padding: 5px;
+    z-index: 10;
 }
-.post-liked > .post-like-hrt {
-   color: rgb(82, 7, 7);
+.like:hover{
+    box-shadow: 2px 2px 2px 1px black;
 }
-.post-like-count{
+.like svg{
+    pointer-events: none;
+}
+.liked svg {
+    fill:red
+}
+.post-like-count {
     text-align: center;
-}
-.post-like-hrt:hover{
-    background-color: red;
 }
 .dog {
     position: relative;
     border: 2px solid rgb(183, 132, 86);
-    width: 300px;
-    height:250px; 
+    width: 400px;
+    height: 260px; 
     overflow: hidden;
     text-align: center;
     color: white;
     background-color: white;
+    margin: 10px;
     
 }
 .dog img{
@@ -104,26 +106,38 @@ a:hover {
     background-color: blanchedalmond;
     box-shadow: 2px 2px 2px 1px rgba(109, 87, 16, 0.247);
 }
-.btn:disabled{
+.btn:disabled {
     background-color: rgb(115, 37, 37);
     cursor: not-allowed;
-}
-.icon {
-    position: absolute;
-    z-index: 2;
 }
 .imageContainer {
     display: flex;
     align-content: center;
-    gap: 30px;
-    padding-top: 10px;
-    /* background-color: rgb(218, 160, 109);   */
+    gap: 80px;
+    background-color: #e7ae75;  
+}
+.fact-display{
+    margin: 20px;
+    align-content: center;
+}
+.fact-display h3{
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(198, 155, 80);
+    padding: 10px;
+    background-color: rgb(250, 210, 180);
+    border-radius: 50% 50%;
+}
+ul{
+    list-style: none;
+    margin: 10px;
 }
 
 img{
-    width: 400px;
-    height: 100%;
-    
+    width: 800px;
+    height: 100%;  
+}
+#policy{
+    background-color: #f3e9dc;
 }
 .policy-container{
     display: flex;
@@ -135,9 +149,21 @@ img{
 .box-policy{  
     padding: 20px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     border: 1px solid #5c3422;
     text-wrap: wrap;
+    box-shadow: 1px 1px 1px 1px black;
+    
+}
+.box-policy h4{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.box-policy p{
+    padding-bottom: 20px;
+}
+.box-policy button{
+    display: flex;
 }
 footer{
     display: flex;
@@ -150,6 +176,6 @@ footer a{
     color: thistle;
 }
 footer a:hover{
-    background-color: aliceblue;
+    background-color: #d3a67e;
 
 }
