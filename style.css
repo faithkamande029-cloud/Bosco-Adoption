@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     max-width: 1500px;
     max-height: 100%;
@@ -113,20 +114,23 @@ a:hover {
 .imageContainer {
     display: flex;
     align-content: center;
-    gap: 30px;
-    background-color: #f1bc87;
-    /* height: 450px;   */
+    gap: 70px;
+    background-color: #ead5c2;
+    height: 390px;
+    padding: 20px;
+     
 }
 .fact-display{
     margin: 20px;
     align-content: center;
+    width: 500px;
 }
 .fact-display h3{
     text-align: center;
-    box-shadow: 1px 1px 1px 1px rgb(198, 155, 80);
+    box-shadow: 1px 2px 1px 2px #5c3422;
     padding: 10px;
     background-color: rgb(250, 210, 180);
-    border-radius: 50% 50%;
+    border-radius: 60% 40%;
 }
 ul{
     list-style: none;
@@ -134,9 +138,13 @@ ul{
     padding-top: 10px;
 }
 
-img{
-    width: 700px;
+.imageContainer img{
+    width: 500px;
     height: 100%;  
+    margin-left: 100px;
+    border-radius: 50% 50%;
+    box-shadow: 4px 5px 5px 5px #5c342268;
+    /* background-color: #d3a67e; */
 }
 #policy{
     background-color: #f3e9dc;
@@ -166,7 +174,9 @@ img{
     padding-bottom: 20px;
 }
 .box-policy button{
-    display: flex;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(109, 87, 16, 0.247);
+    font-weight: bold;
 }
 footer{
     display: flex;
